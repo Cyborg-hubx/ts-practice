@@ -1,6 +1,7 @@
-function greet(name: string): string {
-  return `Hello, ${name}!`;
-}
+const car = {
+  type: "Toyota",
+};
+car.type = "Ford"; // no error
+car.type = 2; // Error: Type 'number' is not assignable to type 'string'.
 
-const message: string = greet("1");
-console.log(message);
+console.log(car.type)
